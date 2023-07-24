@@ -1,0 +1,10 @@
+version: '0.0'
+services:
+  dev_env:
+    container_name: debian
+    build: . # will build a images from current directory
+    image: dev_env:latest
+    ports:
+      - "10312:22"
+    volumes:
+      - .:/home/wind/lab
