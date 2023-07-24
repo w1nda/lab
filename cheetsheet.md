@@ -19,3 +19,8 @@ Just clean the known_hosts of the container.
 > Host key for [127.0.0.1]:10312 has changed and you have requested strict checking.
 > Host key verification failed.
 ```
+
+# connect github with SSH key
+1. generate SSH key in container: ssh-keygen
+2. add the public key in github
+3. add git **SSH** remote in container repo
